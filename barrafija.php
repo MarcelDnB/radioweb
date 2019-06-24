@@ -1,48 +1,54 @@
-<header id="main-header"><!--Cabecera fija-->
-	<img src="images/menu-icono.png" alt="" class="menu-bar">
-	<a id="logo-header" href="#">
-	<?php
-		$conexion = crearConexionBD();
-		include_once("Produccion/gestionarItemA.php");
-		include_once("varios.php");
-		$usuarios = comprobarUsuario($conexion,$_SESSION['login']);
-		$eventos = listarTodosEventos($conexion);
-		cerrarConexionBD($conexion);
+<!DOCTYPE html>
+<html lang="en" >
 
-		?>
-		<span class="site-name">ZeUS</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		
-	<?php 
-	if($_SESSION['consultarproduccion'] == 1) {
-		echo '<span class="site-desc">Departamento de Producción</span>';
-	}
-	if($_SESSION['consultartecnico'] == 1) {
-		echo '<span class="site-desc">Departamento Técnico</span>';
-	}
-	if($_SESSION['consultaralmacen'] == 1) {
-		echo '<span class="site-desc">Departamento de Almacén</span>';
-	}
-	?>
-	
-	</a>
-	<nav id="nav-cerrar">
-		<ul>
-			<li><a href="logout.php">Cerrar sesión</a></li>
-		</ul>
-	</nav><!--/nav-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script  src="js/navbar.js"></script>
+  <link rel="stylesheet" href="css/logo.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+</head>
 
-	
+<body>
 
-
-	<div class="bienvenida">Bienvenido: <?php echo $usuarios["NOMBRE"] ?></div>
-	
-	
-	<script src="js/varios.js"></script>
-	<!--<div class="fecha" id="fecha">Hoy es: <?php echo date('d-m-Y');?></div>-->
-	<!--<div id="eventos">Evento/s en curso: <?php $dteStart = new DateTime(date('Y-m-d')); foreach ($eventos as $eventoo) {if($dteStart->diff(date_create_from_format('d/m/y', $eventoo['FECHAINICIO']))->format("%d")>0 && ($eventoo["ESTADOEVENTO"]=="porRealizar" || $eventoo["ESTADOEVENTO"]=="porRealizar")) {echo "Evento ".$eventoo["EID"];}}?></div>-->
-		
-	 <!--/#logo-header-->
-	
-</header><!--/#main-header-->
+      <!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Warehouse</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</body>
+</html>

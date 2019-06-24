@@ -10,11 +10,11 @@
 
 <body>
 <?php 
-include("navbar.php");
+
 include("slide.php");
-include("player.php");
-
-
+include("pagina.php");
+include("barrafija.php");
+include("contenido.php");
 ?>
 
 </body>
