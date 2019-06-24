@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Music app - TweenMax</title>  
+  <title>Warehouse</title>  
 </head>
 
 
