@@ -1,1 +1,1 @@
-<div class="currentSong">MIERDA DE DE MIERDA -- MIERDA DE DE MIERDA</div>
+<div class="currentSong">MIERDA DE DE -- MIERDA DE DE MIERDA</div>
