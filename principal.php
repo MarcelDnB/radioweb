@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Warehouse</title>  
+  <title>Beats & Vibes</title>  
 </head>
 
 
