@@ -1,49 +1,10 @@
-<?php
-	session_start();
-  include_once("gestionBD.php");
- 	include_once("gestionarUsuarios.php");
-	
-	if (isset($_POST['submit'])){
-    $username= $_POST['logmodaluid'];
-		$password = $_POST['logmodalpass'];
-    $conexion = crearConexionBD();
-		$num_usuarios = consultarUsuario($conexion,$username,$password);
-		$_SESSION['consultarusuarios'] = $num_usuarios;
+<?php session_start();
 
-		cerrarConexionBD($conexion);	
 
-		if ($num_usuarios > 0){
-      $_SESSION['login'] = $username;
-      Header("Location: principal.php");
-    }
-		else{
-      $_SESSION['login'] = "error";
-      Header("Location: limbo.php");
-		}
-	}
+
+
+
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -62,7 +23,6 @@
 </head>
 
 <body>
-
       <!-- Fixed navbar -->
     <nav class="navbar navbar-fixed-top">
       <div class="container">
@@ -80,17 +40,51 @@
             <li class="active"><a class="btn" href="principal.php">Home</a></li>
 
             <?php 
-            if(isset($_SESSION['consultarusuarios'])){
-              if(!($_SESSION['consultarusuarios']>0)) { 
+            if(isset($_SESSION['login'])){
+              if(!($_SESSION['consultarusuarios']>0)) {
                  ?>
             <li><a class="btn" data-toggle="modal" data-target="#myModalRegister" id="btnreg">
   Register
 </a></li>
-            <?php }
+            <?php }else { ?>
+              
+              <li><form action="logout.php" method="POST"><button type="submit" class="btn" id="btnlogout" name="btnlogout"><li><a class="btn">
+  Logout </a></li>
+</button></form>
+
+           <?php }
           } ?>
+          <?php if(!isset($_SESSION['login'])){ ?>
+          
+            <li><a class="btn" data-toggle="modal" data-target="#myModalRegister" id="btnreg">
+  Register
+</a></li>
+          
+          <?php  }  ?>
+
+
+
+
+            <?php if(isset($_SESSION['consultarusuarios'])){
+              if(($_SESSION['consultarusuarios']>0)) {
+               ?>
+            <li><a class="btn">
+  <?php echo $_SESSION['login']; ?>
+</a></li>
+            
+            
+            
+              <?php } ?>
+                
+
+<?php
+              }else { ?>
+            
             <li><a class="btn" data-toggle="modal" data-target="#myModalLogin">
   Login
 </a></li>
+       <?php     } ?>
+            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -145,14 +139,14 @@
       <legend>
       Login
           </legend>
-          <form action="principal.php" method="post">
+          <form action="login.php" method="POST">
           <div><label for="logmodaluid">Username: </label><input type="text" id="logmodaluid" name="logmodaluid"></div>
           <div><label for="logmodalpass">Password: </label><input type="password" id="logmodalpass" name="logmodalpass"></div>
         </fieldset>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary" name="sublog">Login</button>
       </div>
     </div>
   </div>

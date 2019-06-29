@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Beats & Vibes</title>  
@@ -10,7 +11,6 @@
 
 <body>
 <?php 
-
 include("slide.php");
 include("pagina.php");
 include("barrafija.php");
@@ -18,4 +18,4 @@ include("contenido.php");
 ?>
 
 </body>
-</html>
+</html> 

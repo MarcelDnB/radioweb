@@ -2,7 +2,7 @@
 
 function crearConexionBD()
 {
-	$host="oci:dbname=localhost/XE;charset=UTF8";
+	$host="oci:dbname=localhost:1521/XE;charset=UTF8";
 	$usuario="RADIOWEB";
 	$password="radioweb";
 
@@ -15,7 +15,7 @@ function crearConexionBD()
 	}catch(PDOException $e){
 		$_SESSION['excepcion'] = $e->GetMessage();
 		$_SESSION['errorBD']="errorBD";
-		Header("Location: principal.php");
+		Header("Location: excepcion.php");
 	}
 }
 
