@@ -8,4 +8,16 @@ function consultarUsuario($conexion,$username,$password) {
    $stmt->execute();
    return $stmt->fetchColumn();
 }
+function registrarUsuario($conexion,$username,$email,$password) {
+   try {
+   $stmt=$conexion->prepare("CALL registrar_usuario(:username,:email,:password,user)");
+   $stmt->bindParam(':username',$username);
+   $stmt->bindParam(':email',$email);
+   $stmt->bindParam(':password',$password);
+   $stmt->execute();
+   return "";
+   } catch(PDOException $e) {
+		return $e->getMessage();
+    }
+}
 ?>

@@ -20,6 +20,10 @@
   <script  src="js/navbar.js"></script>
   <link rel="stylesheet" href="css/logo.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 </head>
 
 <body>
@@ -33,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Beats & Vibes</a>
+          <a class="navbar-brand titulo" href="#">Beats & Vibes</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -86,7 +90,7 @@
        <?php     } ?>
             
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
@@ -114,18 +118,20 @@
       <legend>
       Register
           </legend>
+          <form action="register.php" method="POST">
           <div><label for="regmodaluid">Username: </label><input type="text" id="regmodaluid" name="regmodaluid"></div>
-          <div><label for="regmodalemail">Email: </label><input type="text" id="regmodalemail" name="regmodalemail"></div>
-          <div><label for="regmodalpass">Password: </label><input type="text" id="regmodalpass" name="regmodalpass"></div>  
+          <div><label for="regmodalemail">Email: </label><input type="email" id="regmodalemail" name="regmodalemail"></div>
+          <div><label for="regmodalpass">Password: </label><input type="password" id="regmodalpass" name="regmodalpass"></div>  
         </fieldset>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary" name="subreg">Register</button>
       </div>
     </div>
   </div>
 </div>
+</form>
  <!-- Modal Login -->
  <div class="modal fade-scale" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

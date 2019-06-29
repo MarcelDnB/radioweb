@@ -15,6 +15,8 @@ html, body {
   float: right;
   color: black;
   font-size: 30px;
+  font-family: 'Fredoka One';
+  
 }
 .slides{
   position: sticky;
@@ -50,9 +52,45 @@ html, body {
 .shrink .navbar-toggle .icon-bar {
   background: #fafafa;
 }
+.titulo{
+  font-family: 'Pacifico';
+  font-size: 2.5em;
+}
 
 
 
 
 
+.loader h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.26);
+  background-image: url('https://image.ibb.co/mhFBHG/water_image.png');
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 50s linear infinite;
+  font-weight: 800;
+}
 
+@keyframes animate {
+	0%{
+		background-position: left 0 top -100px;
+	}
+	20%{
+		background-position: left 800px top -100px;
+	}
+	40%{
+		background-position: left 1800px top -100px;
+	}
+	60%{
+		background-position: left 2800px top -100px;
+	}
+	80%{
+		background-position: left 3800px top -100px;
+	}
+	100%{
+		background-position: left 6800px top -100px;
+	}
+}
