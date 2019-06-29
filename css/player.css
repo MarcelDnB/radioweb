@@ -1,0 +1,119 @@
+.controls {
+  height: 60px;
+}
+.controls button.btn-floating {
+  position: absolute;
+}
+
+.stop-btn-enter-active {
+  animation: stop-btn-in 0.4s linear;
+}
+
+.stop-btn-leave-active {
+  animation: stop-btn-out 0.4s ease-in-out;
+}
+
+.play-btn-enter-active {
+  animation: play-btn-in 0.4s ease-in-out;
+}
+
+.play-btn-leave-active {
+  animation: play-btn-out 0.4s ease-in-out;
+}
+
+@keyframes stop-btn-in {
+  0% {
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+  49% {
+    opacity: 1;
+  }
+  49.5% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+  50.5% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+@keyframes stop-btn-out {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  49% {
+    opacity: 1;
+  }
+  49.5% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  50.5% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+}
+@keyframes play-btn-in {
+  0% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  49% {
+    opacity: 1;
+  }
+  49.5% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  50.5% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+@keyframes play-btn-out {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  49% {
+    opacity: 1;
+  }
+  49.5% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+  50.5% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+}
+.player-inner {
+  position: relative;
+  bottom:30px !important; 
+}

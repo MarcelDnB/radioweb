@@ -24,6 +24,8 @@
   <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" href="css/player.css">
 </head>
 
 <body>
@@ -41,7 +43,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a class="btn" href="principal.php">Home</a></li>
+            <li><a class="btn" href="principal.php">Home</a></li>
 
             <?php 
             if(isset($_SESSION['login'])){
