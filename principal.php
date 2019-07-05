@@ -15,6 +15,7 @@ include("slide.php");
 include("pagina.php");
 include("barrafija.php");
 include("contenido.html");
+include("favorites.php");
 ?>
 
 </body>

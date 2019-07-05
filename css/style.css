@@ -95,3 +95,10 @@ html, body {
 		background-position: left 6800px top -120px;
 	}
 }
+
+.titulofav{
+  color: #000000;
+  background-color: rgba(175, 175, 175, 0.513);
+  font-size: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
