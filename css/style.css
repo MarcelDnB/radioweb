@@ -102,3 +102,11 @@ html, body {
   font-size: 3em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.likebutton{
+  background-color: transparent;
+  border: hidden;
+}
+.likediv{
+  margin-left: 8%;
+}

@@ -6,9 +6,6 @@
 </head>
 
 
-
-
-
 <body>
 <?php 
 include("slide.php");
@@ -19,4 +16,4 @@ include("favorites.php");
 ?>
 
 </body>
-</html> 
+</html>
