@@ -9,9 +9,10 @@ For the database I used Oracle, but it can be changed in the future because I pu
 
 
 ## TODO
-- Create SQL code for the favorites functionality.
-- Finish PHP code for the favorites funcionality.
 - Make favorites functionality work.
+  - Create SQL code for the favorites functionality.
+  - Finish PHP code for the favorites funcionality.
+
 - Style favorites part of page.
 
 
