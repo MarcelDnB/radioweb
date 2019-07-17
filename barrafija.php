@@ -81,7 +81,6 @@
                 <li><a class="btn" data-toggle="modal" data-target="#myModalLogin">
       Login
     </a></li>
-           <?php     } ?> ?>
            <?php     } ?>
                 
 
