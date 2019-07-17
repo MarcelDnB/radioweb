@@ -3,6 +3,7 @@
 <head>
   <link rel='stylesheet' href='css/materialize.min.css'>
   <link rel='stylesheet' href='css/style.css'>
+  <script  src="js/cosas.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,9 @@
               <input type="range" min="0" max="1" step="0.001" v-model="volume"/>
             </p>
           </form>
-          <div class="likediv"><label class="likediv">Like this song</label><button class="likebutton" value="Like"><img src="images/icons/like.png"></button></div>
-          
+          <form action="like.php" method="POST">
+          <div class="likediv"><label class="likediv">Like this song</label><button type="submit" onclick="like()" class="likebutton" value="like"><img src="images/icons/like.png"></button></div>
+        </form>
           <div hidden class="player-container col s12 m3"></div>
           <div hidden class="info col s12 m4">
           </div>

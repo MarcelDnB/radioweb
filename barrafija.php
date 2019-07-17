@@ -49,7 +49,7 @@
 </a></li>
             <?php }else { ?>
               
-              <li><form action="logout.php" method="POST"><button type="submit" class="btn" id="btnlogout" name="btnlogout"><li><a class="btn">
+              <li><form action="logout.php" method="POST"><button type="submit" class="btn btnlogout" id="btnlogout" name="btnlogout"><a class="btn">
   Logout </a></li>
 </button></form>
 
@@ -82,6 +82,7 @@
       Login
     </a></li>
            <?php     } ?> ?>
+           <?php     } ?>
                 
 
 <?php

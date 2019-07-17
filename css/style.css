@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgb(49, 49, 49);
 }
 
 
@@ -101,6 +101,9 @@ html, body {
   background-color: rgba(175, 175, 175, 0.513);
   font-size: 3em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 100px;
+  border-radius: 20px;
+  width: 13%;
 }
 
 .likebutton{
@@ -109,4 +112,21 @@ html, body {
 }
 .likediv{
   margin-left: 8%;
+}
+
+.cuadrofav{
+  border: 100px;
+  background-color: #9e9e9e;
+  border-radius: 20px;
+  color: #000000;
+
+}
+
+.btnlogout{
+  background-color: #00c8ff00;
+  transition: background-color .3s;
+}
+.btnlogout:hover{
+  background-color: white;
+  transition: background-color .3s;
 }
