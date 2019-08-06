@@ -1,5 +1,4 @@
-<?php session_start();
-?>
+
 
 
 <!DOCTYPE html>
@@ -108,6 +107,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
     <!-- Modal Register-->
     <div class="modal fade-scale" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -161,6 +161,5 @@
   </div>
 </div>
             </form>
-            
 </body>
 </html>

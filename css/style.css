@@ -130,3 +130,59 @@ html, body {
   background-color: white;
   transition: background-color .3s;
 }
+
+
+
+.formpaginacion {
+	padding:10px;
+	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 18px;
+	background-color:rgb(75, 75, 75);
+	color: white;
+}
+.formpaginacion [type=submit] {
+	background-color: rgb(255, 255, 255); 
+	border: none;
+	color: rgb(0, 0, 0);
+	padding:12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.formpaginacion [type=submit]:hover {
+	background-color: #32a6ff;
+  color: white;
+}
+
+#enlaces span,#enlaces a{
+	width: 2em;
+	height: 2em;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+}
+#enlaces span:hover,#enlaces a:hover {
+	transform: scale(1.2);
+}
+.current{
+	color: #333 !important;
+	background-color: white !important;
+	border:solid 2px #333;
+	transform: scale(1.2);
+}
+#enlaces{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; 
+	padding-left: 100px;
+	
+}
