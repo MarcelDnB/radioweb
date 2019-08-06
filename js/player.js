@@ -1,7 +1,7 @@
 new Vue({
   el: '#app',
   data: {
-    streamUrl: 'https://icecast.protonradio.com/',
+    streamUrl: 'https://air.radiorecord.ru:805/househits_320',
     volume: 0.75,
     canPlay: false,
     playing: false,
