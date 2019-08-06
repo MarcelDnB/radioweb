@@ -11,7 +11,7 @@ For the database I used Oracle, but it can be changed in the future because I pu
 
 
 ## TODO
-- ~~~~Make favorites functionality work.~~
+- ~~Make favorites functionality work.~~
   - ~~Create SQL code for the favorites functionality.~~
   - ~~Finish PHP code for the favorites funcionality.~~
 
