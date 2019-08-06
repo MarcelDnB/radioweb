@@ -5,7 +5,7 @@ This is an online radio player that includes login/register functionality which 
 For the database I used Oracle, but it can be changed in the future because I put all database scripts in 'SQL Scripts' folder.
 
 ## Bugs
-- There's some bugs sometimes with the login system.
+- ~~There's some bugs sometimes with the login system.~~
 
 
 ## TODO
