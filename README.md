@@ -25,8 +25,5 @@ For the database I used Oracle, but it can be changed in the future because I pu
 - Make the app user friendly by counting online hours etc.
 
 
-## ANDROID
-- COMING SOON..
-
 
 ## Suggested functionalities to implement
