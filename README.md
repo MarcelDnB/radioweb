@@ -21,8 +21,6 @@ For the database I used Oracle, but it can be changed in the future because I pu
 - Playlist functionality.
 - Style the website.
 - Adapt website to mobile/tablets.
-- Improve performance by ordering the code.
-- Make the app user friendly by counting online hours etc.
 
 
 
